@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+  <title>VueloLibre.com</title>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IonIcons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- CSS Navbar -->
+  <link rel="stylesheet" href="./css/navbar.css">
+  <!-- CSS Footer -->
+  <link rel="stylesheet" href="./css/footer.css">
+  <!-- JS -->
+  <script src="./js/slider.js" defer></script>
+</head>
+
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <nav class="nav">
+      <img src="./assets/logo.png" alt="" class="nav__brand">
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">
+            <ion-icon class="nav__link-icon" name="planet-outline"></ion-icon>
+            <span class="nav__link-text">Inicio</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="flights.html" class="nav__link">
+            <ion-icon class="nav__link-icon" name="airplane-outline"></ion-icon>
+            <span class="nav__link-text">Nuestros Vuelos</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <ion-icon class="nav__link-icon" name="logo-tableau"></ion-icon>
+            <span class="nav__link-text">Sobre Nosotros</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <ion-icon class="nav__link-icon" name="code-outline"></ion-icon>
+            <span class="nav__link-text">Desarrollado Por</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="nav__separator"></div>
+
+    <div class="hero">
+      <div class="hero__content">
+        <h1 class="hero__text">
+          Volá con <br>
+          <span>Vuelo Libre</span>
+        </h1>
+        <img src="./assets/airplane.svg" alt="" class="hero__img">
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- CURRENT FLIGHTS -->
+  <section class="current-flights">
+    <div class="title-container">
+      <h2 class="current-flights__title">
+        Vuelos Del Momento
+      </h2>
+    </div>
+
+    <article class="grid">
+      <a href="#" class="card">
+        <img src="./assets/flight-chile.webp" alt="" class="card__img">
+        <h3 class="card__title">Santiago de Chile</h3>
+        <p class="card__text">Desde Buenos Aires, Aeropuerto de Ezeiza</p>
+        <span class="card__span">Ida y vuelta</span>
+        <div class="card__line"></div>
+        <p class="card__price">$50.000</p>
+      </a>
+
+      <a href="#" class="card">
+        <img src="./assets/flight-madrid.webp" alt="" class="card__img">
+        <h3 class="card__title">Madrid</h3>
+        <p class="card__text">Desde Buenos Aires, Aeropuerto de Ezeiza</p>
+        <span class="card__span">Ida y vuelta</span>
+        <div class="card__line"></div>
+        <p class="card__price">$180.000</p>
+      </a>
+
+      <a href="#" class="card">
+        <img src="./assets/flight-miamiwebp.webp" alt="" class="card__img">
+        <h3 class="card__title">Miami</h3>
+        <p class="card__text">Desde Buenos Aires, Aeropuerto de Ezeiza</p>
+        <span class="card__span">Ida y vuelta</span>
+        <div class="card__line"></div>
+        <p class="card__price">$190.000</p>
+      </a>
+
+      <a href="#" class="card">
+        <img src="./assets/flight-rio-de-janeiro.webp" alt="" class="card__img">
+        <h3 class="card__title">Río de Janeiro</h3>
+        <p class="card__text">Desde Buenos Aires, Aeropuerto de Ezeiza</p>
+        <span class="card__span">Ida y vuelta</span>
+        <div class="card__line"></div>
+        <p class="card__price">$80.000</p>
+      </a>
+
+    </article>
+  </section>
+
+
+  <!-- COMMENTS -->
+  <section class="comments">
+    
+    <h2 class="comments__title">
+      Comentarios de nuestros <br> <span>clientes</span>
+    </h2>
+
+    <article class="slider">
+      <div class="slider-button-container">
+        <button class="slider__button" id="button-back">
+          <ion-icon name="caret-back-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="comments-container">
+        <div class="comment comment--show" data-id="1">
+          <img src="./assets/person-1.jpg" alt="" class="comment__img">
+          <h3 class="comment__name">Jhon Doe</h3>
+          <p class="comment__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem aspernatur nisi explicabo rem nobis libero, laborum dicta voluptatum placeat dolorem qui cupiditate suscipit vel quas necessitatibus, facere omnis repellendus! Autem.
+          </p>
+        </div>
+
+        <div class="comment" data-id="2">
+          <img src="./assets/person-2.jpg" alt="" class="comment__img">
+          <h3 class="comment__name">Maria Lows</h3>
+          <p class="comment__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat velit necessitatibus nam cupiditate. Alias, architecto. Iure quod cumque asperiores. Ab praesentium rem ullam et, repellat odit dolorum aut corporis itaque!
+          </p>
+        </div>
+      </div>
+      <div class="slider-button-container">
+        <button class="slider__button" id="button-next">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </article>
+
+  </section>
+
+
+  <!-- HISTORY -->
+  <section class="history">
+    <article class="history-container">
+      <div class="history-texts">
+        <h2 class="history__title">Historia de <span>Vuelo Libre</span></h2>
+        <p class="history__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo debitis inventore esse tempora iure, enim eius, quo tenetur quisquam nam in facilis nobis consectetur odit, veniam adipisci doloribus odio alias voluptas suscipit quia! Id veritatis, obcaecati earum dignissimos voluptatem magni architecto quos excepturi nam veniam optio quo exercitationem doloremque, aspernatur dolore, quis ratione ab iure! Obcaecati earum porro libero aliquid aspernatur. Labore similique sint explicabo quis aperiam, corrupti sequi. Consectetur sint soluta, facere aspernatur rerum maxime maiores! Repellat error, obcaecati nulla vitae facere molestiae dignissimos delectus aut dolore alias dolorem ratione necessitatibus, doloremque optio aperiam similique unde porro? Distinctio, provident!
+        </p>
+      </div>
+      <img src="./assets/history-img.jpg" alt="" class="history__img">
+    </article>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <img src="./assets/email-icon.svg" alt="" class="email-icon">
+
+      <div class="form-container">
+        <p class="footer__text">
+          Ofertas exclusivas en tu email
+        </p>
+
+        <form class="footer-form" action="">
+          <input type="email" class="form__input-email" placeholder="Ingresa tu email">
+          <button type="submit" class="form__button-submit">Enviar</button>
+        </form>
+      </div>
+
+      <div class="social">
+        <a href="#" class="social__link">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#" class="social__link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#" class="social__link">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#" class="social__link">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../assets/background-body.jpg');
+  background-repeat: repeat;
+
+}
+
+/* HEADER */
+.hero {
+  width: 100%;
+  height: 600px;
+  background-image: url('../assets/hero-background.jpg');
+  background-position: 60% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.hero__content {
+  width: 500px;
+  padding: 20px;
+  background-color: #fffa;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: oblique;
+  font-weight: 300;
+  color: #2c165a
+}
+
+.hero__text span {
+  font-weight: 700;
+}
+
+.hero__img {
+  height: 80px;
+}
+
+/* CURRENT FLIGHTS */
+.current-flights {
+  background-image: linear-gradient(#4300d233, #000a), url('../assets/current-flights-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 120px;
+}
+
+.current-flights .title-container {
+  width: 60%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #4300d2;
+  box-shadow: 5px 5px 5px 10px #2c165a;
+  border-radius: 20px;
+  position: relative;
+  top: -60px;
+}
+
+.current-flights__title {
+  font-size: 40px;
+  color: #ccc;
+  font-style: oblique;
+}
+
+.grid {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  width: max-content;
+  margin: auto;
+  height: 600px;
+  background-color: #f2f2f2;
+  color: #333;
+  margin-bottom: 50px;
+  border-radius: 18px;
+  text-decoration: none;
+  box-shadow: 5px 10px 10px 5px #000;
+}
+
+.card:hover {
+  transition: all .6s;
+  transform: scale(1.1);
+}
+
+.card__img {
+  width: 400px;
+  height: 400px;
+}
+
+.card__title {
+  color: #1b1b1b;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.card__span {
+  margin-left:10px;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #999; 
+}
+
+.card__price {
+  margin-left: 10px;
+  margin-top: 30px;
+  color: #000;
+  font-size: 30px;
+}
+
+/* COMMENTS */
+.comments {
+  background-color: #ccc;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 120px;
+}
+
+.comments__title {
+  font-size: 40px;
+  text-shadow: 1px 1px 1px #4300d2;
+}
+
+.comments__title span {
+  font-size: 60px;
+  font-style: oblique;
+}
+
+.slider {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c165a;
+  border-radius: 18px;
+}
+
+.slider-button-container {
+  width: 10%;
+}
+
+.slider__button {
+  background: transparent;
+  border: none;
+  font-size: 80px;
+  color: #fff;
+}
+
+.slider__button:hover {
+  cursor: pointer;  
+  transition: all .6s;
+  transform: scale(1.5);
+}
+
+.comments-container {
+  width: 80%;
+  height: 500px;
+  position: relative;
+}
+
+.comment {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-shadow: 3px 3px 3px #000;
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+.comment--show {
+  opacity: 1;
+}
+
+.comment__img {
+  width: 300px;
+  height: 300px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment__name {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.comment__text {
+  font-size: 20px;
+}
+
+/* HISTORY */
+.history {
+  padding: 40px 0;
+  margin-top: 120px;
+}
+
+.history-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+.history-texts {
+  width: 60%;
+  padding: 40px;
+}
+
+.history__title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.history__title span {
+  font-style: oblique;
+}
+
+.history__text {
+  font-size: 20px;
+}
+
+.history__img {
+  width: 40%;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}

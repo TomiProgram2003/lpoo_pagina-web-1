@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+  <title>VueloLibre.com</title>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IonIcons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/about.css">
+  <!-- CSS Navbar -->
+  <link rel="stylesheet" href="./css/navbar.css">
+  <!-- CSS Footer -->
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <nav class="nav">
+          <img src="./assets/logo.png" alt="" class="nav__brand">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <ion-icon class="nav__link-icon" name="planet-outline"></ion-icon>
+                <span class="nav__link-text">Inicio</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="flights.html" class="nav__link">
+                <ion-icon class="nav__link-icon" name="airplane-outline"></ion-icon>
+                <span class="nav__link-text">Nuestros Vuelos</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">
+                <ion-icon class="nav__link-icon" name="logo-tableau"></ion-icon>
+                <span class="nav__link-text">Sobre Nosotros</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="developed.html" class="nav__link">
+                <ion-icon class="nav__link-icon" name="code-outline"></ion-icon>
+                <span class="nav__link-text">Desarrollado Por</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    
+        <div class="nav__separator"></div>
+    
+        <div class="hero">
+          <div class="hero-content"></div>
+        </div>
+    
+      </header>
+
+      <section class="about">
+          <h2 class="title">Sobre nosotros</h2>
+          <p class="text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum deserunt dolore ducimus, cupiditate porro quas in accusantium dolorem voluptatibus aliquid voluptatum, ea voluptatem amet consectetur voluptates, voluptate assumenda eius? Eaque, esse in possimus error, accusantium delectus aliquid fugit hic dolorum minima architecto odio tenetur harum dolores quod nobis facilis. Animi!
+          </p>
+
+          <article class="map-container">
+              <h3 class="map__title">¿Dónde nos encontramos?</h3>
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.316010309522!2d-58.4184510847698!3d-34.62145368045487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf8baf57619%3A0xc1c1af436cc2ee9b!2sAv.%20Boedo%20730%2C%20C1218AAQ%20CABA!5e0!3m2!1ses!2sar!4v1650330343895!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </article>
+
+          <marquee behavior="" direction="">
+            <img src="./assets/airplane-gif.gif" alt="" class="about__img">
+          </marquee>
+
+      </section>
+
+      
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <img src="./assets/email-icon.svg" alt="" class="email-icon">
+
+      <div class="form-container">
+        <p class="footer__text">
+          Ofertas exclusivas en tu email
+        </p>
+
+        <form class="footer-form" action="">
+          <input type="email" class="form__input-email" placeholder="Ingresa tu email">
+          <button type="submit" class="form__button-submit">Enviar</button>
+        </form>
+      </div>
+
+      <div class="social">
+        <a href="#" class="social__link">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#" class="social__link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#" class="social__link">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#" class="social__link">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
